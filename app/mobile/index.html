@@ -1,0 +1,27 @@
+<html>
+<head></head>
+<body>
+  <h1>mobile version</h1>
+
+  <div id="container">
+    <div id="init">
+      <input id="gameid" type="text" />
+      <button id="gameidsend">send</button>
+    </div>
+
+    <div id="wait" hidden>
+      waiting...
+      <button id="start">start</button>
+    </div>
+
+    <div id="game" hidden>
+      game
+    </div>
+  <div>
+
+  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/app.io.js"></script>
+</body>
+</html>

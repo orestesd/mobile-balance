@@ -1,0 +1,23 @@
+{
+  "name": "mobilance",
+  "version": "0.0.1",
+  "description": "mobile balance experiment",
+  "author": "orestesd",
+  "license": "ISC",
+  "scripts": {
+    "test": "grunt test",
+    "start": "grunt run"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.2",
+    "load-grunt-tasks": "~0.2.0"
+  },
+  "dependencies": {
+    "connect": "^1.7.0",
+    "socket.io": "^0.9.16"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}

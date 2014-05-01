@@ -1,0 +1,15 @@
+<html>
+<head></head>
+<body>
+  <script type="text/javascript">
+    (function(){
+      var userAgent = navigator.userAgent.toLowerCase();
+      if( userAgent.match(/android/i) || userAgent.match(/iphone/i) || userAgent.match(/ipad/i) || userAgent.match(/ipod/i) ) { 
+        document.location = './mobile'; 
+      } else {
+        document.location = './browser'; 
+      }
+    })()
+  </script>
+</body>
+</html>
