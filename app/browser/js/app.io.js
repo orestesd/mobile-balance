@@ -14,8 +14,8 @@
     $(document).trigger('io-game-started');
   });
 
-  socket.on('device-rotated', function(data) {
-    $(document).trigger('io-device-rotated', data);
+  socket.on('device-command', function(data) {
+    $(document).trigger('io-device-command', data);
   });
 
   $(document).bind('io-emit', function(evt, channel, data) {

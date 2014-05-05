@@ -19,8 +19,8 @@
     $('#game').show();
   });
 
-  $(document).bind('io-device-rotated', function(event, data) {
-    console.log('device %s rotated', data.clientid, data.alpha, data.beta, data.gamma);
+  $(document).bind('io-device-command', function(event, data) {
+    console.log('device %s command', data.clientid, data.alpha, data.beta, data.gamma);
   });
 
   function emit() {

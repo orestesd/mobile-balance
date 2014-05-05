@@ -55,7 +55,7 @@
     start();
   });
 
-  $(document).bind('io-device-rotated', function(event, data) {
+  $(document).bind('io-device-command', function(event, data) {
     var rotation = data.beta * Math.PI / 180;
     var radians = rotation - palette.angle;
     Body.rotate(palette, radians);

@@ -54,9 +54,9 @@ io.sockets.on('connection', function (socket) {
     });
   });
 
-  socket.on('device-rotated', function(data) {
+  socket.on('device-command', function(data) {
     data.clientid = socket.id;
-    game.server.emit('device-rotated', data);
+    game.server.emit('device-command', data);
   });
 
 });

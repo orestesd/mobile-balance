@@ -58,13 +58,13 @@
 
     $('#game').html(rot.alpha + ',' + rot.beta + ',' + rot.gamma);
     
-    emit('device-rotated', rot);
+    emit('device-command', rot);
   }
 
   window.deviceOrientationHandler = deviceOrientationHandler;
 
   function emit() {
-    $(document).trigger('io-emit', arguments);
+    window.wsemit.apply(window, arguments);
   }
 
 })();

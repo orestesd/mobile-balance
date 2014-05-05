@@ -1,4 +1,4 @@
-(function(conf) {
+(function(conf, global) {
 
   var socket = io.connect(conf.server);
 
@@ -15,10 +15,10 @@
   });
 
   
-  $(document).bind('io-emit', function(evt, channel, data) {
+  global.wsemit = function(channel, data) {
     console.log(channel, data);
     socket.emit(channel, data);
-  });
+  };
 
-})( {server:window.location.origin} );
+})( {server:window.location.origin}, window );
 
